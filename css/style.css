@@ -1,0 +1,775 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 3000px;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(244, 183, 142);
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    opacity: 0.7;
+    z-index: 10;
+
+}
+.title{
+    color: rgb(65, 51, 26);
+    float: left;
+    margin-right: 550px;
+    margin-top: 2px;
+    position: relative;
+}
+.title h2{
+    display: inline-block;
+    margin-left: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    /* font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif; */
+  
+
+}
+.title i
+{
+    font-size: 50px;
+  
+}
+.links{
+    margin-right: 10px;
+   overflow: auto;
+}
+.links ul li{
+display: inline-block;
+margin-left: 20px;
+float: left;
+margin-top: 20px;
+font-size: 17px;
+}
+/* .over{
+    display: inline-block;
+    margin-left: 20px;
+    float: left;
+
+} */
+.links ul li a{
+    color: rgb(65, 51, 26);
+    text-decoration: none;
+}
+/* .links ul li a:hover{
+   text-decoration: underline;
+   line-height: 20px;
+   /* border: 3px solid rgb(65, 51, 26); */
+ /* }
+.over{
+    position: relative;
+} */
+.links ul li a::after{
+    content: "";
+    width:0;
+    height: 4px;
+    top:0;
+    left: 0;
+    display: block;
+    background-color: rgb(65, 51, 26);
+    margin-top: 2px;
+
+    
+}
+.links ul li a:hover::after{
+    /* color: white;
+    background-color:white;
+    font-size: 22px; */
+    width: 100%;
+    height: 4px;
+    opacity: 0.7;
+    transition: 0.7s;
+} 
+.intro{
+    background-image: url("../images/delicious-arabic-fast-food-plateau_23-2148651142.webp");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left ;
+    background-attachment: fixed;
+    /* margin-top: -200px; */
+    position: relative;
+    /* top: 0; */
+}
+
+.para{
+    font-style: italic;
+    color: rgb(65, 51, 26);
+    /* margin-left: 20px;
+ padding-top: 300px; */
+    /* margin-top: 300px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.para p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* .intro h1{
+    margin-top: 500px;
+    
+} */
+.para button{
+    margin-top: 30px ;
+    background-color:rgb(65, 51, 26) ;
+    color: aliceblue;
+    border: 2p solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    
+}
+.b1{
+    margin-left: 130px;
+}
+.para button:hover{
+opacity: 0.8;
+width: 90px;
+}
+
+.title2{
+font-style: italic;
+color: rgb(65, 51, 26);
+text-align: center;
+margin: 70px 0px;
+text-transform: uppercase;
+}
+.line{
+    margin:20px;
+    width: 90px;
+    /* height: px; */
+    /* color: rgb(175, 118, 37); */
+    border: 4px solid rgb(175, 118, 37);
+    margin: auto;
+}
+.section2{
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+}
+.parent2{
+    width:30%;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+    border: 2px solid rgb(175, 118, 37);
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 90px;
+    margin-top: 60px;
+}
+.parent2 i{
+    font-size: 25px;
+   margin-top: 10px;
+}
+.places a{
+    display: block;
+    margin-top: 20px;
+    color: brown;
+    text-decoration: none;
+}
+.parent2:after{
+    position: absolute;
+    content: " ";
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    color: aliceblue;
+    background-color: rgb(240, 237, 233);
+    opacity: 0;
+    transition: 3s;
+}
+.parent2:hover{
+    color:rgb(40, 29, 14);
+}
+.parent2:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  
+    /* color: aliceblue; */
+}
+/* /////////////////////////////////////// */
+
+.menu{
+    width: 30%;
+    /* height: 200px; */
+    border: 2px solid brown;
+    float: left;
+    text-align: center;
+    margin:20px 10px;
+    color: aliceblue;
+    position: relative;
+   margin-bottom: 50px;
+}
+.paragraph1{
+    position: absolute;
+    opacity: 0;
+    /* visibility: hidden; */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* margin-top: 50px; */
+    /* padding-top: 50px; */
+    top: 0;
+    padding-top: 50px;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+}
+.menu:hover .paragraph1{
+    opacity: 1;
+    transition: 2s;
+    
+}
+ .paragraph1 a{
+   color: aliceblue; 
+}
+.paragraph1 a:hover{
+    color: yellow; 
+ }
+/* /////////////////////////////////////////////////////// */
+/* .serve1::after ,.serve2::after ,.serve3::after ,.serve4::after ,.serve5::after ,.serve6::after {
+    background-color: rgb(14, 9, 2);
+} */
+.serve4 ,.serve5 ,.serve6 {
+margin: 20px 5px;
+}
+.serve1:hover{
+background-image:url(../images/chines.webp);
+background-size: cover;
+background-position: center;
+/* opacity: 0.7; */
+color: white;
+transition: 6s;
+}
+.serve2:hover{
+    background-image:url(../images/italy-1460295_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.7; */
+    color:white;
+    transition: 6s;
+    }
+ .serve3:hover{
+        background-image:url(../images/spanish.webp);
+        background-size: cover;
+        background-position: center;
+        /* opacity: 0.7; */
+        color:white;
+        transition: 6s;
+        }
+        .serve4:hover{
+            background-image:url(../images/syria-162435_1280.webp);
+            background-size: cover;
+            background-position: center;
+            /* opacity: 0.7; */
+            color:white;
+            transition: 6s;
+           
+            }
+            .serve5:hover{
+                background-image:url(../images/india.webp);
+                background-size: cover;
+                background-position: center;
+                /* opacity: 0.5; */
+                color:white;
+                transition: 6s;
+                }
+                .serve6:hover{
+                    background-image:url(../images/egypt.webp);
+                    
+                    background-size: cover;
+                    background-position: center;
+                    /* opacity: 0.5; */
+                    color:white;
+                    transition: 6s;
+                    }    
+.serve h2{
+    display: inline-block;
+    padding-left: 10px;
+z-index: 10;
+    /* transition-delay: 2s; */
+    margin-bottom: 20px;
+}
+ 
+.serve a{
+    color: rgb(233, 214, 181);
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+.special h2{
+    color:rgb(65, 51, 26) ;
+
+}
+.special div{
+    width: 80px;
+    /* color: rgb(175, 118, 37); */
+    border: 2px solid rgb(175, 118, 37);
+}
+.special{
+    margin:20px 15px;
+
+}
+.words p {
+    display: inline-block;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.words{
+    margin-left:  15px;
+    line-height: 30px;
+    color: rgb(65, 51, 26);
+    float: left;
+}
+.images {
+    float: right;
+ 
+    /* 
+    height: 400px; */
+    margin-right: 50px;
+}
+.images img{
+    width: 500px;
+    height: 400px;
+}
+.images .i1{
+   margin-left: 170px;
+   color: blueviolet;
+}
+.images i:hover{
+    color: blueviolet;
+}
+
+.whyus{
+    overflow: auto;
+    margin: 50px 20px;
+}
+/* /////////////////////////////////////////////////////////////// */
+.container5{
+width: 100%;
+height: 230px;
+margin: auto;
+overflow: auto;
+background-color: rgb(243, 232, 224);
+}
+.content5{
+float: left;
+margin:50px 130px;
+color: rgb(157, 92, 92);
+
+}
+.content5 i{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(126, 35, 35);
+}
+/* //////////////////////////////////////////////////////////////////// */
+.table-intro{
+   margin:100px 0px;
+}
+.table-intro h2{
+    color: rgb(126,35,35);
+    text-align: center;
+    text-transform: uppercase;
+}
+.table-intro .line-intro{
+    width: 80px;
+margin: auto;
+    border: 2px solid rgb(175, 118, 37);
+    margin-top: 20px;
+}
+.table{
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+   
+}
+.price{
+    width: 30%;
+    float: left;
+    border: 2px solid rgb(175, 118, 37);
+    height: 250px;
+    /* margin:100px 5px; */
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.price .i{
+  border-radius: 50%;
+  width: 80px;
+height: 80px;
+border: 2px solid rgb(170, 96, 96);
+margin: auto;
+}
+.i i{
+    font-size: 45px;
+  padding-top: 10px;
+  color: rgb(65, 51, 26);
+}
+.price h3{
+   margin-top:30px;
+   color: rgb(65, 51, 26);
+}
+.price p{
+    margin-top:30px ;
+    color: rgb(65, 51, 26);
+}
+.price:after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0;
+    top:0;
+    left: 0;
+    background-color: rgba(244, 183, 142, 0.5);
+    opacity: 0;
+}
+.price:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 2s;
+   
+}
+.price button{
+    margin-top: 20px;
+    width: 50px;
+    background-color: rgb(65, 51, 26);
+    color: aliceblue;
+}
+.price button:hover{
+    width: 60px;
+    height:20px ;
+    /* border-radius: 50%; */
+}
+/* ////////////////////////////////////// */
+.container7{
+    height: 400px;
+    overflow: auto;
+    background-image: url(../images/shawrma.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    margin: 80px 0px;
+}
+.opecity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color:rgba(222, 182, 156, 0.7);
+
+}
+.chief img{
+     width: 90px;
+     height: 90px;
+     border-radius: 50%;
+     margin-right: 20px;
+     float: left;
+}
+.con{
+    overflow: auto;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+.chief{
+    margin-left: 10%;
+    float: left;
+    
+}
+.chief .discripe  {
+margin-top: 10px ;
+ float: left;
+
+}
+.discripe , .type{
+    color: rgb(65, 51, 26);
+}
+/* //////////////////////////////////// */
+.team h2{
+text-align: center;
+color: rgb(65, 51, 26);
+text-transform: uppercase;
+}
+.line-team{
+    width: 80px;
+   margin: auto;
+    border: 4px solid rgb(175, 118, 37);
+}
+.team{
+    margin: 80px 0px;
+}
+.team-contain{
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+    
+   
+}
+.team1{
+    width: 30%;
+    height: 300px;
+    border: 2px solid rgb(175, 118, 37);
+    text-align: center;
+   position: relative;
+   float: left;
+   margin-right: 10px;
+   margin-bottom: 90px;
+}
+.team-parent  {
+    position: relative;
+    margin: auto;
+    margin: 20px 10px;
+    width: 90%;
+    
+
+}
+.team-parent img{
+    width: 100%;
+}
+.icon-team {
+    position: absolute;
+     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*
+    display:block; */
+    /* margin-left: 90%; */
+   
+}
+.icon-team a{
+    
+display: block;
+width: 40px;
+height: 40px;
+background-color: rgb(65, 51, 26);
+color: white;
+margin-left: auto;
+opacity: 0;
+}
+.icon-team a i{
+    line-height: 40px;
+}
+.team-descripe{
+    color: rgb(126, 35, 35);
+    text-transform: capitalize;
+}
+.team1::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0;
+    top:0;
+    left: 0;
+    background-color: rgba(244, 183, 142, 0.5);
+    opacity: 0;
+
+}
+.team1:hover::after {
+width: 100%;
+height: 100%;
+opacity: 0.5;
+transition: 3s;
+}
+.team1:hover .icon-team a{
+    opacity: 1;
+}
+/* ////////////////////////////////////////////////// */
+.container9{
+    width: 70%;
+   margin: auto;
+}
+.recently-header{
+    text-align: center;
+    margin: 50px 0px;
+}
+.recently-header div{
+    width: 80px;
+    border: 3px solid rgb(175, 118, 37);
+    margin: auto;
+}
+.recently-header h2{
+    text-transform: uppercase;
+    color: rgb(65, 51, 26);
+}
+.recently{
+    overflow: auto;
+}
+.recently1{
+    width: 31%;
+    border: 2px solid rgb(65, 51, 26);
+    position: relative;
+    margin: 20px 10px;
+float: left;
+height: 460px;
+}
+.recently1 img{
+    width: 90%;
+    display: block;
+    margin: auto;
+   margin-top: 10px;
+   /* border-radius: 50%; */
+   margin-bottom: 20px;
+}
+.ic{
+    color: rgb(65, 51, 26);
+   
+}
+.ic a i{
+    color: rgb(65, 51, 26);
+    margin: 20px 20px;
+}
+.ic p ,.ic h2{
+    margin: 20px 2px;
+}
+.a{
+    margin-left: 100px;
+    color: red;
+    /* text-decoration: none; */
+}
+.recently1:hover .ic{
+color:rgb(193, 58, 58);
+}
+.recently1::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(247, 216, 195, 0.5);
+
+    opacity: 0;
+}
+.recently1:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 2s;
+   /* color: aliceblue; */
+}
+/* //////////////////////////////////////////// */
+.footer{
+    height: 350px;
+    text-align: center;
+    margin: 50px 0px;
+    background-color: rgb(244, 183, 142);
+    opacity: 0.8;
+}
+.footer img{
+display: block;
+margin: auto;
+margin-bottom: 50px;
+padding-top: 40px;
+}
+.footer a i{
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    color: rgb(108, 70, 17);
+    margin-bottom: 30px;
+}
+.footer a i:hover{
+    color: white;
+    width: 45px;
+}
+/* .recently1:hover {
+    background-color: rgb(126, 35, 35);
+  color: aliceblue;
+  
+} */
+/* .paragraph1,.paragraph2,.paragraph3,.paragraph4,.paragraph5,.paragraph6{
+    width: 30%;
+    height: 200px;
+    border: 2px solid brown;
+    float: left;
+    text-align: center;
+    margin:20px 10px;
+    color: aliceblue;
+} */
+/* .paragraph1 i,.paragraph2 i,.paragraph3 i,.paragraph4 i,.paragraph5 i,.paragraph6 i{
+   font-size: 25px;
+   border: 2px solid white;
+   border-radius: 2px;
+} */
+/* .paragraph1 a,.paragraph2 a,.paragraph3 a,.paragraph4 a,.paragraph5 a,.paragraph6 a{
+    color: aliceblue;
+} */
+/* .menu h2,.menu p ,.menu a{
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+    padding-top: 50px;
+} */
+/* .menu:hover {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+    
+} */
+/* .p h2:hover {
+transition: 5s;
+} */
+/* .p p{
+    opacity: 0;
+} */
+/* .p p:hover{
+    opacity: 1;
+    transition: 1.5s;
+} */
+/* .p a:hover{
+    color: red;
+  transition: 2s;
+   
+} */
+
+/* .menu{
+    background-image: url("../images/hen.jpg");
+    background-size: cover;
+} */
+/* .paragraph2{
+    background-image: url("../images/meats.webp");
+    background-size: cover;
+}
+.paragraph3{
+    background-image: url("../images/fishes.webp");
+    background-size: cover;
+    background-position:left;
+}
+.paragraph4{
+    background-image: url("../images/drinks.webp");
+    background-size: cover;
+}
+.paragraph5{
+    background-image: url("../images/pasta.webp");
+    background-size: cover;
+}
+.paragraph6{
+    background-image: url("../images/pizza.webp");
+    background-size: cover;
+} */
